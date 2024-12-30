@@ -1,4 +1,4 @@
-name: "blog"
+name: "rails8-store"
 
 services:
   rails-app:
