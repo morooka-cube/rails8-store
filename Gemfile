@@ -61,7 +61,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
-  # Rails < 8.1.2 と minitest 6 の互換性問題を回避するための一時的な対策
-  # TODO: Rails 8.1.2 以降にアップグレードしたら削除すること
-  gem "minitest", "< 7.0"
+  gem "minitest"
 end

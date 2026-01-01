@@ -390,7 +390,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
-  minitest (< 7.0)
+  minitest
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.1)
