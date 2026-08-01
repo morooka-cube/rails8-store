@@ -31,6 +31,11 @@ Rails.application.configure do
   # Store uploaded files on the local file system in a temporary directory.
   config.active_storage.service = :test
 
+  # No variant processing is used in the test suite; disabling it avoids requiring
+  # libvips to be installed just to boot the app (Rails 8.1.3.1 loads the configured
+  # variant processor eagerly at boot to call Vips.block_untrusted).
+  config.active_storage.variant_processor = :disabled
+
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
